@@ -1,0 +1,5 @@
+" Vundle Plugins {
+    if filereadable(expand('~/.dotfiles/vim/bundles.vim'))
+        source ~/.dotfiles/vim/bundles.vim
+    endif
+" }

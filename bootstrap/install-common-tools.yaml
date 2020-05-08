@@ -1,0 +1,20 @@
+- defaults:
+    link:
+        create: true
+        relink: true
+        force: true
+    shell:
+        stdout: true
+        stderr: true
+
+- clean: ['$HOME']
+
+- shell:
+    - [git submodule update --init --recursive, Installing submodules]
+
+# tools
+- link:
+    $HOME/.vim: vim
+
+- shell:
+    - [ test -d $HOME/.vim/bundle/Vundle.vim || $HOME/.dotfiles/bootstrap/install-vim.sh , Installing Vundle ]
