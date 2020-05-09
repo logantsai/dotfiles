@@ -1,0 +1,34 @@
+[user]
+    name = "MarkTsai"
+    email = marktsai0213@gmail.com
+
+[color]
+    ui = true
+
+[color "branch"]
+    current = yellow reverse
+    local = yellow
+    remote = green
+
+[color "diff"]
+    meta = yellow bold
+    frag = magenta bold
+    old = red
+    new = green
+
+[alias]
+    st = status
+    ci = commit
+    br = branch
+    co = checkout
+    df = diff
+    dc = diff --cached
+    dc-name = diff --name-only --cached
+    lg = log -p
+    l1a = log --pretty=oneline --abbrev-commit
+    lol = log --graph --decorate --pretty=oneline --abbrev-commit
+    lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+    lon = log --name-only --pretty=oneline --abbrev-commit
+
+[include]
+    path = .gitconfig.user

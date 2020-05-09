@@ -18,3 +18,8 @@
 
 - shell:
     - [ test -d $HOME/.vim/bundle/Vundle.vim || $HOME/.dotfiles/bootstrap/install-vim.sh , Installing Vundle ]
+
+# git
+- link:
+    $HOME/.gitconfig: git/gitconfig
+
