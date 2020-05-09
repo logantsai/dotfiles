@@ -41,7 +41,5 @@
 " Environment {
     " End {
         call vundle#end()            " required
-        syn on
-        filetype plugin indent on    " required
     " }
 " }

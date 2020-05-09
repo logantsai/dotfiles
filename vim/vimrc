@@ -3,3 +3,22 @@
         source ~/.dotfiles/vim/bundles.vim
     endif
 " }
+
+" Basic Setting {
+    syntax on
+    set backspace=indent,eol,start
+    set nu
+    set tabstop=4
+    set shiftwidth=4
+    set expandtab
+    set hlsearch
+
+" }
+
+" Cursorline Setting {
+    set cursorline
+    hi CursorLine cterm=NONE ctermbg=238
+    hi CursorLineNr cterm=bold ctermbg=Red ctermbg=NONE
+    hi Visual guifg=#000000 guibg=#FFFFFF gui=NONE
+" }
+
