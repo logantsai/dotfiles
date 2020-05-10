@@ -13,6 +13,11 @@
 " }
 
 " Bundle {
+    " Color {
+        Plugin 'rafi/awesome-vim-colorschemes' "{
+        " }
+    " }
+
     " Editor {
         Plugin 'ntpeters/vim-better-whitespace'
         Plugin 'jiangmiao/auto-pairs'
@@ -25,7 +30,7 @@
 
     " Tracing and Debug {
         Plugin 'majutsushi/tagbar' " {
-            :nmap <F8> :TagbarToggle<CR>
+            nmap <F8> :TagbarToggle<CR>
             "auto move cursor to tagbar window.
             let g:tagbar_autofocus = 1
         " }
@@ -43,3 +48,5 @@
         call vundle#end()            " required
     " }
 " }
+
+colo molokai

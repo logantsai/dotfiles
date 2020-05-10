@@ -1,6 +1,6 @@
 " Vundle Plugins {
-    if filereadable(expand('~/.dotfiles/vim/bundles.vim'))
-        source ~/.dotfiles/vim/bundles.vim
+    if filereadable(expand('~/.dotfiles/vim/bundles-link.vim'))
+        source ~/.dotfiles/vim/bundles-link.vim
     endif
 " }
 
@@ -20,5 +20,39 @@
     hi CursorLine cterm=NONE ctermbg=238
     hi CursorLineNr cterm=bold ctermbg=Red ctermbg=NONE
     hi Visual guifg=#000000 guibg=#FFFFFF gui=NONE
+" }
+
+" Python {
+    au BufNewFile,BufRead *.py
+    \ set tabstop=4 |
+    \ set softtabstop=4 |
+    \ set shiftwidth=4 |
+    \ set textwidth=79 |
+    \ set expandtab |
+    \ set fileformat=unix |
+    \ set encoding=utf-8
+" }
+
+
+" Key Mapping {
+    "-- show tab and line break by F5
+    set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
+    noremap <F5> :set list!<CR>
+    inoremap <F5> <C-o>:set list!<CR>
+    cnoremap <F5> <C-c>:set list!<CR>
+
+    "-- resize window CTRL+(h|j|k|l)
+    noremap <C-j> :resize +1<CR>
+    noremap <C-k> :resize -1<CR>
+    noremap <C-h> :vertical resize -1<CR>
+    noremap <C-l> :vertical resize +1<CR>
+
+
+    "-- indent and unindent on each mode
+    nnoremap <Tab> >>_
+    nnoremap <S-Tab> <<_
+    " inoremap <S-Tab> <C-D>
+    " vnoremap <Tab> >gv
+    " vnoremap <S-Tab> <gv
 " }
 

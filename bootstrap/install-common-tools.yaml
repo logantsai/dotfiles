@@ -16,6 +16,10 @@
 - link:
     $HOME/.vim: vim
 
+# vim
+- link:
+    $HOME/.dotfiles/vim/bundles-link.vim: $HOME/.dotfiles/vim/bundles-linux.vim
+
 - shell:
     - [ test -d $HOME/.vim/bundle/Vundle.vim || $HOME/.dotfiles/bootstrap/install-vim.sh , Installing Vundle ]
 
