@@ -33,25 +33,24 @@
     \ set encoding=utf-8
 " }
 
-" {
+" Makefile {
     autocmd FileType make setlocal noexpandtab
 " }
 
 " Key Mapping {
-    "-- show tab and line break by F5
+    " - show tab and line break by F5
     set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
     noremap <F5> :set list!<CR>
     inoremap <F5> <C-o>:set list!<CR>
     cnoremap <F5> <C-c>:set list!<CR>
 
-    "-- resize window CTRL+(h|j|k|l)
+    " - resize window CTRL+(h|j|k|l)
     noremap <C-j> :resize +1<CR>
     noremap <C-k> :resize -1<CR>
     noremap <C-h> :vertical resize -1<CR>
     noremap <C-l> :vertical resize +1<CR>
 
-
-    "-- indent and unindent on each mode
+    " - indent and unindent on each mode
     nnoremap <Tab> >>_
     nnoremap <S-Tab> <<_
     " inoremap <S-Tab> <C-D>

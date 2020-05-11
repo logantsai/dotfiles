@@ -1,0 +1,9 @@
+# vim: set filetype=sh syntax=sh
+
+alias ag='ag --noaffinity --color-match="1;31;40"'
+
+
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias -- -="cd -"
