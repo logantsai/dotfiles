@@ -42,7 +42,6 @@
     " }
 " }
 
-
 " Environment {
     " End {
         call vundle#end()            " required

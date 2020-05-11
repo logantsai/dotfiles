@@ -33,6 +33,9 @@
     \ set encoding=utf-8
 " }
 
+" {
+    autocmd FileType make setlocal noexpandtab
+" }
 
 " Key Mapping {
     "-- show tab and line break by F5
