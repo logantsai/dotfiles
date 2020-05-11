@@ -12,7 +12,7 @@
     set shiftwidth=4
     set expandtab
     set hlsearch
-
+    set encoding=utf8
 " }
 
 " Cursorline Setting {
