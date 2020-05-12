@@ -25,5 +25,5 @@
 
 # git
 - link:
-    $HOME/.gitconfig: git/gitconfig
+    $HOME/.gitconfig: git/.gitconfig
 

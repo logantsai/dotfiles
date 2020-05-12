@@ -24,11 +24,10 @@
     df = diff
     dc = diff --cached
     dc-name = diff --name-only --cached
-    lg = log -p
     l1a = log --pretty=oneline --abbrev-commit
     lol = log --graph --decorate --pretty=oneline --abbrev-commit
     lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
-    lon = log --name-only --pretty=oneline --abbrev-commit
-
+    logp = log --date=iso --pretty='format:%C(blue)%ad%Creset %C(yellow)%h%C(green)%d%Creset %C(white)%s %C(magenta) [%an]%Creset'
+    logpn = log --pretty=format:'%C(yellow)%h %Cred%ad %Cblue%an%Cgreen%d %Creset%s' --date=short --name-only
 [include]
     path = .gitconfig.user
