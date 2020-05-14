@@ -1,1 +1,1 @@
-/root/.dotfiles/vim/bundles-linux.vim
+/home/sean0213/.dotfiles/vim/bundles-linux.vim
