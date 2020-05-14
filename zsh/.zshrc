@@ -31,7 +31,11 @@ if ! zplug check --verbose; then
     fi
 fi
 
-[[ -s /root/.autojump/etc/profile.d/autojump.sh ]] && source /root/.autojump/etc/profile.d/autojump.sh
+if [ ! -d $HOME/.autojump ]; then
+    cd $HOME/.dotfiles/zsh/zplug/repos/wting/autojump && python install.py
+fi
+
+[[ -s $HOME/.autojump/etc/profile.d/autojump.sh ]] && source $HOME/.autojump/etc/profile.d/autojump.sh
 
 autoload -U compinit && compinit
 
