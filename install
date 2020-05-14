@@ -25,6 +25,9 @@ git submodule update --init --recursive "${DOTBOT_DIR}"
 
 "${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" -c "${COM_CONFIG}" "${@}"
 
-echo "source ~/.dotfiles/runcom/.bash_profile" >> "${HOME}/.bashrc"
+# echo "source ~/.dotfiles/runcom/.bash_profile" >> "${HOME}/.bashrc"
+
+echo "source ~/.dotfiles/runcom/.bash_profile" >> "${HOME}/.zashrc"
+
 
 # "${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" -c "${SYS_CONFIG}" "${@}"
