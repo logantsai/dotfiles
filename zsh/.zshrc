@@ -1,5 +1,7 @@
 source ~/.zplug/init.zsh
-export SHELL=zsh
+
+source ~/.dotfiles/runcom/.bash_profile
+
 alias ls="ls --color=always"
 alias ll="ls -al"
 
