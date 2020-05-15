@@ -16,7 +16,8 @@ zplug "zsh-users/zsh-autosuggestions"
 zplug "zsh-users/zsh-syntax-highlighting", defer:2
 
 # Load theme file
-zplug "themes/ys", from:oh-my-zsh, as:theme
+zplug "themes/gianu", from:oh-my-zsh, as:theme
+# zplug "themes/af-magic", from:oh-my-zsh, as:theme
 # zplug 'dracula/zsh', as:theme
 
 zplug "wting/autojump", \
