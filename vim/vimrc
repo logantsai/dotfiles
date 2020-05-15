@@ -19,7 +19,7 @@
     set cursorline
     hi CursorLine cterm=NONE ctermbg=238
     hi CursorLineNr cterm=bold ctermbg=Red ctermbg=NONE
-    hi Visual guifg=#000000 guibg=#FFFFFF gui=NONE
+
 " }
 
 " Python {

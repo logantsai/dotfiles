@@ -48,4 +48,4 @@
     " }
 " }
 
-colo molokai
+colo OceanicNext
