@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+APPEND="$1"
+TARGET="$2"
+
+if grep --quiet "$APPEND" "$TARGET"; then
+    exit 0
+else
+    echo "$APPEND" >> "$TARGET"
+
+fi
