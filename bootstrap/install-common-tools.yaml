@@ -14,11 +14,11 @@
     - [git submodule update --init --recursive, Installing submodules]
     - [chsh -s $(which zsh), Making zsh the default shell]
     - [locale-gen en_US.UTF-8, Make sure zplug could install normally]
+    - [cp ~/.dotfiles/zsh/.zshrc $HOME/.zshrc]
 
 # tools
 - link:
     $HOME/.vim: vim
-    $HOME/.zshrc: zsh/.zshrc
     $HOME/.zplug: zsh/zplug
 
 # vim
